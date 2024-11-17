@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee&Cats</title>
+    <link href="styles_flex.css" rel="stylesheet">
+    <link rel="icon" href="../images/icon.png" type="image/png">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index_flex.html"><img src="../images/logo.png" alt="Coffee shop logotype"></a>
+    </div>
+    <div class="title">
+        <h1><a id="x" href="index_flex.html">Coffee shop (&cats)</a></h1>
+    </div>
+</header>
+
+<div class="container">
+
+
+    <nav class="navigation" id="block2">
+        <ul>
+            <li class="web_ver">
+                <a href="index_flex.html">
+                    Page version
+                    <img class="def-image" src="../images/arrow-point.png" alt="Pointer to the left">
+                    <img class="hover-image" src="../images/arrow-point-down.png" alt="Pointer to the bottom">
+                    [<i>NEW </i>]
+                </a>
+                <ul class="submenu version">
+                    <li><a href="../mobile_ver/index_mobile.html">Mobile version</a></li>
+                    <li><a href="../index_email.html">Email Version</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="index_flex.html">
+                    Coffee
+                    <img class="def-image" src="../images/arrow-point.png" alt="Pointer to the left">
+                    <img class="hover-image" src="../images/arrow-point-down.png" alt="Pointer to the bottom">
+                </a>
+                <ul class="submenu coffee">
+                    <li><a href="index_flex.html">Arabica</a></li>
+                    <li><a href="index_flex.html">Robusta</a></li>
+                    <li><a href="index_flex.html">Excelsa</a></li>
+                    <li><a href="index_flex.html">Liberica</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="index_flex.html">
+                    Accessories
+                    <img class="def-image" src="../images/arrow-point.png" alt="Pointer to the left">
+                    <img class="hover-image" src="../images/arrow-point-down.png" alt="Pointer to the bottom">
+                </a>
+                <ul class="submenu accessories">
+                    <li><a href="index_flex.html">Water Kettles</a></li>
+                    <li><a href="index_flex.html">Filter Papers</a></li>
+                    <li><a href="index_flex.html">Drink-ware</a></li>
+                    <li><a href="index_flex.html">Milk Frothing</a></li>
+                </ul>
+            </li>
+            <li><a href="index_flex.html">Drips</a></li>
+            <li><a href="index_flex.html">Meet the cats</a></li>
+            <li><a href="index_flex.html">Our blog</a></li>
+            <li><a href="index_flex.html">Cooperation</a></li>
+        </ul>
+        <div class="cat-gallery">
+            <img src="../images/gallery.jpg" usemap="#cat-map" alt="Cat gallery intro">
+            <map name="cat-map">
+                <area shape="circle" coords="95, 110, 50" href="index_flex.html" alt="Link 1">
+            </map>
+            <a href="index_flex.html"><p>Check out the gallery of our cats!</p></a>
+        </div>
+        <a href="#" class="create-list-link" data-target="block2">Create List</a>
+    </nav>
+
+    <div class="main-block">
+
+        <div class="content-additional">
+
+            <div class="content-block">
+
+                <main id="block3">
+                    <div class="month-choice">
+                        <h2>Featured Coffee of the Month:</h2>
+                        <img src="../images/latte-art.png" alt="Cup of coffee">
+                        <h3>"Colombian Supremo - September Special"</h3>
+                        <p>
+                            This month, we're highlighting our rich and smooth Colombian Supremo beans!
+                            Grown high in the Andean mountains, these beans are known for their well-balanced flavor,
+                            with notes of caramel, chocolate, and a hint of citrus. The medium body and mild acidity
+                            make it a versatile coffee that's perfect for any time of day. Whether you enjoy it as a strong
+                            espresso or a smooth pour-over, our Colombian Supremo will make every sip a treat.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="brew-tips">
+                        <h2>Brewing Tips:</h2>
+                        <p id="intro">Make the most of your coffee with these brewing tips tailored to different methods:</p>
+                        <ul>
+                            <li>
+                                Pour-Over:
+                                <ol class="instruction">
+                                    <li>Grind: Medium-fine grind for a balanced extraction.</li>
+                                    <li>Water Temp: 195&deg;-205&deg;F (90&deg;-96&deg;C).</li>
+                                    <li>Ratio: Use 1g of coffee for every 16g of water for optimal flavor.</li>
+                                    <li>Tip: Pour water slowly in circular motions to evenly saturate the grounds.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Espresso:
+                                <ol class="instruction">
+                                    <li>Grind: Fine grind for a concentrated shot.</li>
+                                    <li>Water Temp: 190&deg;-195&deg;F (88&deg;-91&deg;C).</li>
+                                    <li>Ratio: Use 18g of coffee for a double shot (about 60ml).</li>
+                                    <li>Tip: Tamp the coffee evenly to ensure even extraction and a rich crema.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                French Press:
+                                <ol class="instruction">
+                                    <li>Grind: Coarse grind for a smoother, less bitter taste.</li>
+                                    <li>Water Temp: 200&deg;F (93&deg;C).</li>
+                                    <li>Ratio: 1:15 coffee-to-water ratio for a rich brew.</li>
+                                    <li>
+                                        Tip: After 4 minutes of steeping, stir gently and press the plunger slowly
+                                        to avoid over-extraction.
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <form id="numberForm">
+                            <label for="numberInput">Enter a number to "flip"</label>
+                            <input type="number" id="numberInput" required>
+                            <button type="submit" >Submit</button>
+                        </form>
+                    </div>
+                    <form id="alignmentForm">
+                        <p class="form-description">Choose alignment type</p>
+                        <label>
+                            <input type="radio" name="alignment" value="left" id="alignLeft"> Left
+                        </label>
+                        <label>
+                            <input type="radio" name="alignment" value="center" id="alignCenter"> Center
+                        </label>
+                        <label>
+                            <input type="radio" name="alignment" value="right" id="alignRight"> Right
+                        </label>
+                    </form>
+                    <a href="#" class="create-list-link" data-target="block3">Create List</a>
+                </main>
+
+                <section class="promo">
+                    <div class="delivery"><img src="../images/delivery.png" alt="Delivery icon">
+                        <span>Free delivery across Ukraine on orders over 500 UAH!</span></div>
+                    <div class="discount"><img src="../images/sale.png" alt="Delivery icon">
+                        <span>Get 10% off on all drinks at our cafe. Use code: COFFEECATS10</span></div>
+                </section>
+
+            </div>
+
+            <section class="additional" id="block4">
+                <p>Choose the coffee you would like to drink with your cat:</p>
+
+                <figure>
+                    <a href="index_flex.html"><img src="../images/brazil.png" alt="Brazil map"></a>
+                    <a href="index_flex.html"><div class="figcaption">Chocolate and nutty from Brazil</div></a>
+                </figure>
+
+                <figure>
+                    <a href="index_flex.html"><img src="../images/ethiopia.png" alt="Ethiopia map"></a>
+                    <a href="index_flex.html"><div class="figcaption">Fruity and floral from Ethiopia</div></a>
+                </figure>
+
+                <figure>
+                    <a href="index_flex.html"><img src="../images/colombia.png" alt="Colombia map"></a>
+                    <a href="index_flex.html"><div class="figcaption">Smooth and sweet from Colombia</div></a>
+                </figure>
+                <a href="#" class="create-list-link" data-target="block4">Create List</a>
+            </section>
+        </div>
+
+        <footer>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">About us</a></p>
+            <p><a href="index_flex.html">Contact</a></p>
+            <p><a href="https://maps.app.goo.gl/WNNmqcJhYfUUizgY6">Location</a></p>
+            <h2 id="y">Start your day with us!</h2>
+        </footer>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
